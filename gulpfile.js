@@ -130,6 +130,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
     fonts
   ),
