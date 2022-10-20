@@ -67,8 +67,7 @@ const fonts = () =>
 // Copy
 
 const copy = (done) => {
-  gulp.src([
-  ], {
+  gulp.src(" ", {
     base: 'source'
   })
     .pipe(gulp.dest('build'));

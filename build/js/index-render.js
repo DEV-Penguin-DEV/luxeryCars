@@ -5,7 +5,7 @@ const renderCarsCardsImage = () => {
     const imgElement = carCard.querySelector('.car-card__img');
     const fileName = carCard.querySelector('.car-card__title').textContent.replaceAll(' ', '-');
 
-    imgElement.src = `img/${fileName}.png`
+    imgElement.src = `../img/${fileName}.png`
   })
 }
 

@@ -1,0 +1,52 @@
+.buy-form {
+  position: relative;
+  padding-bottom: 121px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 969px;
+    height: 506px;
+    background: url("../img/rolls.png") no-repeat;
+    z-index: -1;
+    right: -200px;
+    bottom: 0;
+  }
+}
+
+.buy-form__title {
+  margin-bottom: 20px;
+}
+
+.buy-form__text {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5d5d5f;
+}
+
+.buy-form__form {
+  width: 334px;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+
+.buy-form__input {
+  padding: 22px 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #5d5d5f;
+  }
+}
+
+.buy-form__submit {
+  padding: 20px 5px;
+}
