@@ -20,16 +20,16 @@
 
       <nav class="main-header__main-nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Автомобили</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Бронирование авто</a></li>
+          <li class="main-nav__item"><a href="#presenting-page" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#our-parking" class="main-nav__link">Автомобили</a></li>
+          <li class="main-nav__item"><a href="#buy-form" class="main-nav__link">Бронирование авто</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="main-container">
-    <section class="presenting-page">
+    <section class="presenting-page" id="presenting-page">
       <div class="preaenting-page__container container">
         <h2 class="presenting-page__title">Аренда премиальных автомобилей</h2>
 
@@ -45,7 +45,7 @@
 
     </section>
 
-    <section class="our-parking container">
+    <section class="our-parking container" id="our-parking">
       <h2 class="our-parking__title title">Наш автопарк</h2>
 
       <ul class="our-parking__list">
@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
 
         <li class="our-parking__car-card car-card">
@@ -108,7 +108,7 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
 
         <li class="our-parking__car-card car-card">
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
 
         <li class="our-parking__car-card car-card">
@@ -170,7 +170,7 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
 
         <li class="our-parking__car-card car-card">
@@ -201,7 +201,7 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
 
         <li class="our-parking__car-card car-card">
@@ -232,19 +232,20 @@
             </div>
           </div>
 
-          <button class="car-card__booking-button button" type="button">ЗАбронировать</button>
+          <a class="car-card__booking-button button" href="#buy-form" type="button">ЗАбронировать</a>
         </li>
       </ul>
     </section>
 
-    <section class="buy-form container">
+    <section class="buy-form container" id="buy-form">
+      <div class="buy-form__bg"></div>
       <h2 class="buy-form__title title">Узнать цену и забронировать</h2>
       <p class="buy-form__text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</p>
 
       <form action="" class="buy-form__form" method="post">
-        <input type="text" class="buy-form__input" placeholder="Ваше имя">
-        <input type="tel" class="buy-form__input" placeholder="Ваш телефон">
-        <input type="text" class="buy-form__input" placeholder="Автомобиль, который вас интересует">
+        <input type="text" class="buy-form__input" placeholder="Ваше имя" required>
+        <input type="tel" class="buy-form__input" placeholder="Ваш телефон" pattern="\+?[\s\-\(\)0-9]{7,19}$" required>
+        <input type="text" class="buy-form__input" placeholder="Автомобиль, который вас интересует" required>
 
         <button type="submit" class="buy-form__submit button">Узнать цену</button>
       </form>

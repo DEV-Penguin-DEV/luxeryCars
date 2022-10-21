@@ -1,17 +1,16 @@
 .buy-form {
   position: relative;
   padding-bottom: 121px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 969px;
-    height: 506px;
-    background: url("../img/rolls.png") no-repeat;
-    z-index: -1;
-    right: -200px;
-    bottom: 0;
-  }
+.buy-form__bg {
+  position: absolute;
+  width: 969px;
+  height: 506px;
+  background: url("../img/rolls.png") no-repeat;
+  z-index: -1;
+  right: -600px;
+  bottom: 0;
 }
 
 .buy-form__title {
@@ -44,6 +43,10 @@
     font-size: 16px;
     line-height: 130%;
     color: #5d5d5f;
+  }
+
+  &:hover {
+    outline: 1px solid #000000;
   }
 }
 
